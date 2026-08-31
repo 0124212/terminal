@@ -1,0 +1,79 @@
+watch_config_changes: True
+enable_logging: False
+rendering_backend: V2
+
+global:
+  border_width: 4
+  border_offset: -1
+  border_radius: Round
+  border_z_order: AboveWindow
+  follow_native_border: True
+  initialize_delay: 200
+  unminimize_delay: 150
+
+  active_color: "#ffffff"
+  inactive_color: "#404040"
+
+  animations:
+    active:
+      - type: Fade
+        duration: 150
+        easing: EaseInOutQuad
+    inactive:
+      - type: Fade
+        duration: 150
+        easing: EaseInOutQuad
+    fps: 60
+    enabled: True
+
+  effects:
+    active: []
+    inactive: []
+    enabled: False
+
+window_rules:
+  - match: Class
+    name: "Windows.UI.Core.CoreWindow"
+    enabled: False
+
+  - match: Class
+    name: "XamlExplorerHostIslandWindow"
+    enabled: False
+
+  - match: Process
+    name: "tacky-borders"
+    enabled: False
+
+  - match: Process
+    name: "zebar"
+    enabled: False
+
+  - match: Title
+    name: "komorebi-bar"
+    enabled: False
+
+  - match: Title
+    name: "keyviz"
+    enabled: False
+
+  - match: Title
+    name: "Picture-in-Picture"
+    enabled: False
+
+  - match: Process
+    name: "seelen-ui"
+    enabled: False
+
+  - match: Process
+    name: "thide"
+    enabled: False
+
+  - match: Process
+    name: "FL64"
+    enabled: True
+    border_radius: Round
+
+  - match: Process
+    name: "Discord"
+    enabled: True
+    border_radius: Round

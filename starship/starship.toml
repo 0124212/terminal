@@ -1,0 +1,23 @@
+format = """
+[\\[](#C4A35A) $directory[\\]](#C4A35A) \
+[\\[](#7A9E7A) $git_branch[\\]](#7A9E7A) \
+$character"""
+
+palette = "dracula"
+
+[palettes.dracula]
+path = "#C8C8C8"
+git_branch = "#7A9E7A"
+prompt = "#C4A35A"
+
+[directory]
+style = "bold path"
+truncate_to_repo = false
+
+[git_branch]
+style = "bold green"
+symbol = ""
+
+[character]
+success_symbol = "[❯](bold #C4A35A)"
+error_symbol = "[❯](bold #FF5555)"

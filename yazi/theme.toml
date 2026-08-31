@@ -1,0 +1,43 @@
+[manager]
+cwd = { fg = "#C8C8C8" }
+
+hovered         = { fg = "#202020", bg = "#6A8A9E" }
+preview_hovered = { fg = "#202020", bg = "#6A8A9E" }
+
+find_keyword  = { fg = "#D4B86A", bg = "#6A8A9E", bold = true }
+find_neighbor = { fg = "#D4B86A", bold = true }
+
+marker_selected = { fg = "#7A9E7A" }
+marker_copied   = { fg = "#D4B86A" }
+marker_marked   = { fg = "#8A7A9E" }
+
+tab_active   = { fg = "#202020", bg = "#6A8A9E" }
+tab_inactive = { fg = "#D0D0D0", bg = "#555555" }
+tab_match    = { fg = "#D4B86A" }
+
+count_copied = { fg = "#202020", bg = "#D4B86A" }
+count_cut    = { fg = "#202020", bg = "#C45C5C" }
+count_selected = { fg = "#202020", bg = "#7A9E7A" }
+
+[status]
+separator_open  = ""
+separator_close = ""
+separator_style = { fg = "#555555", bg = "#555555" }
+
+mode_normal = { fg = "#202020", bg = "#6A8A9E", bold = true }
+mode_select = { fg = "#202020", bg = "#7A9E7A", bold = true }
+mode_unset  = { fg = "#202020", bg = "#C45C5C", bold = true }
+
+[progress]
+progress_failed  = { fg = "#C45C5C", bold = true }
+progress_success = { fg = "#7A9E7A", bold = true }
+progress_warn    = { fg = "#D4B86A", bold = true }
+
+[permissions]
+r = "#6A8A9E"
+w = "#D4B86A"
+x = "#7A9E7A"
+s = "#8A7A9E"
+S = "#8A7A9E"
+t = "#C45C5C"
+T = "#C45C5C"

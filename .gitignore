@@ -1,0 +1,21 @@
+# Logs
+*.log
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor
+*.swp
+*.swo
+*~
+
+# Node (if widget packs are cloned locally)
+node_modules/
+dist/
+
+# Secrets
+*.env
+*.key
+*.pem
